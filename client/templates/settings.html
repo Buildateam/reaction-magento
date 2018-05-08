@@ -1,0 +1,55 @@
+<template name="magentoImportSettings">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">Magento REST API Connection</h4>
+    </div>
+    <div class="panel-body">
+      {{#autoForm collection=Collections.Packages
+                  schema=Schemas.MagentoImportPackageConfig
+                  doc=packageData
+                  type="update"
+                  id="magento-import-update-form" }}
+        {{>afQuickField name="settings.host" label="Host"}}
+        {{>afQuickField name="settings.port" label="Port"}}
+        {{>afQuickField name="settings.path" label="Path"}}
+        {{>afQuickField name="settings.login" label="Login"}}
+        {{>afQuickField name="settings.password" label="Password"}}
+        <button type="submit" class="rui btn btn-danger pull-right">Save Changes</button>
+      {{/autoForm}}
+    </div>
+    <div class="panel-heading">
+      <h4 class="panel-title">Actions</h4>
+    </div>
+    <div class="panel-body">
+      <div class="form-group">
+      {{#autoForm collection=Collections.Packages
+                  schema=Schemas.MagentoImportPackageConfig
+                  doc=packageData
+                  id="magento-import-products-start-form"
+                  type="update" }}
+        <div id="magento-import-start-form-progress" style="float: left;"></div>
+        <button type="submit" class="rui btn btn-danger pull-right" id="magento-import-products-start-form-submit">Start Products Import</button><br>
+      {{/autoForm}}
+    </div>
+    <div class="form-group">
+      {{#autoForm collection=Collections.Packages
+                  schema=Schemas.MagentoImportPackageConfig
+                  doc=packageData
+                  id="magento-import-customers-start-form"
+                  type="update"
+                  style="height: 20px;" }}
+        <button type="submit" class="rui btn btn-danger pull-right" id="magento-import-customers-start-form-submit">Start Customers Import</button>
+        {{/autoForm}}
+    </div>
+    <div class="form-group">
+      {{#autoForm collection=Collections.Packages
+                  schema=Schemas.MagentoImportPackageConfig
+                  doc=packageData
+                  id="magento-import-orders-start-form"
+                  type="update" }}
+        <button type="submit" class="rui btn btn-danger pull-right" id="magento-import-orders-start-form-submit">Start Orders Import</button>
+      {{/autoForm}}
+    </div>
+  </div>
+  </div>
+</template>

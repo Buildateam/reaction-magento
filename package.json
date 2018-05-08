@@ -1,0 +1,26 @@
+{
+  "name": "magento-import-plugin",
+  "version": "1.0.0",
+  "description": "Magento plugin from Buildateam",
+  "main": "register.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Buildateam/magento-import-plugin.git"
+  },
+  "author": "buildateam.io",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Buildateam/magento-import-plugin/issues"
+  },
+  "homepage": "https://github.com/Buildateam/magento-import-plugin#readme",
+  "dependencies": {
+    "get-csv": "^3.0.3",
+    "magento-xmlrpc": "git+https://github.com/albatnode/magento-xmlrpc"
+  }
+}
