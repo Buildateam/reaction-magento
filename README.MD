@@ -1,8 +1,8 @@
 # Reaction magento importer
 
-This package uses for import data to csv from Magento ONLY version 1.
+This package is used for import data to csv from Magento ONLY version 1.
 
-## Install
+## Installation
 
 You have to clone this repo to your local machine directory and then copy that to ReactionCommerce project folder.
 
