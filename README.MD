@@ -1,6 +1,12 @@
 # Reaction magento importer
 
-This package is used for import data to csv from Magento ONLY version 1.
+This package is used to import data from Magento EE 1.x stores into Reaction Commerce.
+
+The package can be used to import products, orders and customers. 
+
+Products and orders are imported via Magento API and customers using a csv file from standard Magento export functionality.
+
+The package needs more work and might require customizations for each particular scenario.
 
 ## Installation
 
@@ -12,5 +18,6 @@ cp <path-where-plugin-is> <path-to-your-project/imports/plugins/custom>
 ```
 
 Developed by Buildateam
+
 Buildateam.io - Outsource Web / Mobile / Ecommerce Design & Development To Top Experts Worldwide. 
 Email hello@buildateam.io for more details. 
