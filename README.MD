@@ -1,4 +1,4 @@
-# Reaction magento importer
+# Reaction Commerce Magento importer
 
 This package is used to import data from Magento EE 1.x stores into Reaction Commerce.
 
